@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "158677336925",
+    "firebase_url": "https://agile-serious-game-241306.firebaseio.com",
+    "project_id": "agile-serious-game-241306",
+    "storage_bucket": "agile-serious-game-241306.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:158677336925:android:40d0936f8c589aea",
+        "android_client_info": {
+          "package_name": "fr.polytech.teamL.agile_serious_game"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "158677336925-94r0d1jdk9u0ej33uoaaft32v5c0misp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSuwKjugBpXH2ehi__i3jh_hLg7KdRVy0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "158677336925-94r0d1jdk9u0ej33uoaaft32v5c0misp.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "158677336925-7fdmd8itcchl8mk901eosstfj5sh1d55.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "Base.lproj"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

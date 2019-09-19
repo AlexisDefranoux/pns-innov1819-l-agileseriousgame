@@ -1,0 +1,39 @@
+<div *ngFor="let iter of this.teamsPerformance; let i=index">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 mx-2 my-2">
+                    <mat-card>
+                        <mat-card-title>
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                  {{this.title}} à l'itération {{i+1}}
+                                </div>
+                            </div>
+                        </mat-card-title>
+                        <mat-card-content>
+                                <div class="container" *ngIf="iter.length === 0">
+                                        <div class="row justify-content-center">
+                                            <div class="spinner-border" role="status">
+                                                <span class="sr-only">Loading...</span>
+                                            </div>
+                                    </div>
+                                </div>
+                            <div class="container" *ngIf="iter.length > 0">
+                                <div class="row justify-content-center">
+                                    <google-chart
+                                    [title]="this.title"
+                                    [type]="this.type"
+                                    [data]="iter"
+                                    [columnNames]="this.columnNames"
+                                    [options]="this.options">
+                                  </google-chart>
+                                </div>
+                            </div>
+                    </mat-card-content>
+                </mat-card>
+            </div>
+        </div>
+      </div>
+</div>
+
+

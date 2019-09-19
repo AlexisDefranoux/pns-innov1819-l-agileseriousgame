@@ -1,0 +1,41 @@
+<mat-card>
+    <mat-card-title>
+        <div class="container">
+            <div class="row justify-content-center">
+                    Itération {{this.iteration}}
+            </div>
+        </div>
+    </mat-card-title>
+    <mat-card-content>
+        <div class="container">
+            <div class="row justify-content-center">
+                    <circle-progress
+                    [backgroundPadding]= '-4'
+                    [radius]= '180'
+                    [space]= '-10'
+                    [toFixed]= '0'
+                    [maxPercent]= '1000'
+                    [outerStrokeGradient]= 'true'
+                    [outerStrokeWidth]= '10'
+                    [outerStrokeColor]= '"#4882c2"'
+                    [outerStrokeGradientStopColor]= '"#53a9ff"'
+                    [innerStrokeColor]= '"#e7e8ea"'
+                    [innerStrokeWidth]= '10'
+                    [title]= 'this.phase[this.phase_iterator]'
+                    [subtitle]='this.convertToTimerString()'
+                    [subtitleFontSize]='15'
+                    [animateTitle]= 'false'
+                    [animationDuration]= '1000'
+                    [showUnits]='false'
+                    [showBackground]= 'false'
+                    [showInnerStroke]= 'false'
+                    [clockwise]= 'false'
+                    [startFromZero]= 'false'
+                    [percent]='((this.timer_max[this.phase_iterator] - this.timer_val)/this.timer_max[this.phase_iterator])*100'
+                    >
+        
+                    </circle-progress>
+            </div>
+        </div>
+    </mat-card-content>
+</mat-card>

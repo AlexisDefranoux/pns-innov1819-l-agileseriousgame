@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>158677336925-bhh5ic32eajkur1oh373ja1erpbaarmh.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.158677336925-bhh5ic32eajkur1oh373ja1erpbaarmh</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCBaVieOSQPBOMMhMzC49mCoXjls0Iabdg</string>
+	<key>GCM_SENDER_ID</key>
+	<string>158677336925</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>fr.polytech.teamL.agileSeriousGame</string>
+	<key>PROJECT_ID</key>
+	<string>agile-serious-game-241306</string>
+	<key>STORAGE_BUCKET</key>
+	<string>agile-serious-game-241306.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:158677336925:ios:74a41330396bafc8</string>
+	<key>DATABASE_URL</key>
+	<string>https://agile-serious-game-241306.firebaseio.com</string>
+</dict>
+</plist>

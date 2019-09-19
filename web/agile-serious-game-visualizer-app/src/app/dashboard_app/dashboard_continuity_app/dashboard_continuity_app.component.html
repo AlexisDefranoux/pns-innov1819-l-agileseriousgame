@@ -1,0 +1,39 @@
+
+
+<div class="container">
+    <div class="row">
+      <div class="col-12 mx-2 my-2">
+          <mat-card *ngIf="this.teamsRanking.length > 0">
+              <mat-card-title>
+                <div class="container">
+                  <div class="row justify-content-center">
+                    {{this.title}}
+                  </div>
+                </div>
+              </mat-card-title>
+              <mat-card-content>
+                  <div class="container" *ngIf="this.teamsRanking[0].length === 1">
+                      <div class="row justify-content-center">
+                          <div class="spinner-border" role="status">
+                              <span class="sr-only">Loading...</span>
+                          </div>
+                  </div>
+              </div>
+                <div class="container" *ngIf="this.teamsRanking[0].length > 1">
+                  <div class="row justify-content-center">
+                      <google-chart style="width:auto!important"
+                      [title]="this.title"
+                      [type]="this.type"
+                      [data]="this.teamsRanking"
+                      [columnNames]="this.columnNames"
+                      [options]="this.options">
+                    </google-chart>
+                  </div>
+                </div>
+              </mat-card-content>
+            </mat-card>
+      </div>
+    </div>
+  </div>
+  
+  

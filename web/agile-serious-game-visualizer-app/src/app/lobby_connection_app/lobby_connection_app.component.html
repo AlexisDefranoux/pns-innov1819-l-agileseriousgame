@@ -1,0 +1,41 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <mat-card>
+        <mat-card-title>
+          <div class="container">
+              <div class="row justify-content-center my-2">
+                  <p class="mx-3">Rentrez votre clé de partie</p>
+              </div>
+          </div>
+        </mat-card-title>
+        <mat-card-content>
+            <div class="container"  *ngIf="!this.loading">
+                <form class="col-12">
+                  <div class="row justify-content-center my-2">
+                      <mat-form-field>
+                          <input matInput placeholder="Clé de la partie" [formControl]="this.lobbyKeyFormControl">
+                          <mat-error *ngIf="this.lobbyKeyFormControl.hasError('minlength') && this.lobbyKeyFormControl.hasError('maxlength') && !this.lobbyKeyFormControl.hasError('required')">
+                            La clé de la partie est composée de 6 caractères.
+                          </mat-error>
+                          <mat-error *ngIf="this.lobbyKeyFormControl.hasError('required')">
+                            La clé de la partie est <strong>requise</strong>.
+                          </mat-error>
+                        </mat-form-field>
+                  </div>
+                  <div class="row justify-content-center my-2">
+                      <button type="button" mat-raised-button color="primary" [disabled]="!this.lobbyKeyFormControl.valid" (click)="onConnect()">Se connecter</button>
+                  </div>
+                  </form>
+            </div>
+              <div class="spinner-grow" role="status" *ngIf="this.loading">
+                <span class="sr-only">Loading...</span>
+              </div>
+        </mat-card-content>
+    </mat-card>
+    
+  </div>
+  
+
+  
+
+</div>
